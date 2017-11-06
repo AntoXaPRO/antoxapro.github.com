@@ -2,11 +2,16 @@ extends _webDocument.pug
 block body
     header
         .container
-            a.site-logo(href="/") AntoXa PRO
+            .site-logo
+                a(href="/") AntoXa PRO
     main.content
         .container
-            h1.title=pageTitle || 'Hello, World!'
+            h1.title=pageTitle
             block content
     footer
         .container
-            p &copy; 2017 AntoXa PRO | Создание сайтов.
+            p.copyright &copy; 2017 AntoXa PRO | 
+                strong ASP.NET, NodeJs, HTML, CSS
+            ul.contacts
+                li тел: +7 996 919 35 34
+                li email: info@antoxa.pro

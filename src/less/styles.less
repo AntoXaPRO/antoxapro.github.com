@@ -14,13 +14,35 @@ body {
 header {
     padding: @s-padding 0px;
     .site-logo {
-        .font-light;
+        a {
+            .font-light;
+            display: inline-block;
+            font-size: 38px;
+            line-height: 1;
+            color: @color-dark;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+footer {
+    padding: @c-padding 0px;
+    p {
+        margin-bottom: 5px;
+    }
+    .copyright {
+        font-size: 16px;
+    }
+    .contacts {
         display: block;
-        font-size: 34px;
-        line-height: 1;
-        color: @color-dark;
-        &:hover {
-            text-decoration: none;
+        margin: 0px;
+        padding: 0px;
+        & > li {
+            display: inline-block;
+            padding: 0px;
+            margin-right: @c-padding;
         }
     }
 }
