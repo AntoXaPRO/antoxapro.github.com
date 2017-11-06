@@ -101,6 +101,10 @@ module.exports = __webpack_require__.p + "fonts/SegoeUISemiBold.eot";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__less_styles_less__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__less_styles_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__less_styles_less__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__yandex_js__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__yandex_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__yandex_js__);
+
+
 
 
 /***/ }),
@@ -756,6 +760,35 @@ module.exports = function (css) {
 	return fixedCss;
 };
 
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports) {
+
+/* Яндекс Метрика. */
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter46542480 = new Ya.Metrika({
+                id:46542480,
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true
+            });
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
 
 /***/ })
 /******/ ]);
