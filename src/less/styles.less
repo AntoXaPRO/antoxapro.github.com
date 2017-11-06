@@ -1,0 +1,26 @@
+@import '../../bower_components/axp-front/less/_core';
+@import '../../bower_components/axp-front/less/_font-segoe-ui';
+@import '../../bower_components/axp-front/less/typography';
+@import '../../bower_components/axp-front/less/common';
+@import '_core';
+
+body {
+    margin: 0px;
+    padding: 0px;
+    color: @color-dark;
+    background-color: @color-light;
+}
+
+header {
+    padding: @s-padding 0px;
+    .site-logo {
+        .font-light;
+        display: block;
+        font-size: 34px;
+        line-height: 1;
+        color: @color-dark;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

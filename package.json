@@ -1,0 +1,33 @@
+{
+  "name": "antoxapro.github.com",
+  "version": "1.0.0",
+  "description": "AntoXaPRO Web Site",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "pug src/vievs/pug/pages --out docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntoXaPRO/axp.github.com.git"
+  },
+  "author": "AntoXa PRO <info@antoxa.pro>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntoXaPRO/axp.github.com/issues"
+  },
+  "homepage": "https://antoxapro.github.io",
+  "devDependencies": {
+    "css-loader": "^0.28.7",
+    "file-loader": "^1.1.5",
+    "html-webpack-plugin": "^2.30.1",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "pug": "^2.0.0-rc.4",
+    "pug-loader": "^2.3.0",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.8.1"
+  }
+}

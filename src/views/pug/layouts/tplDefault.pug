@@ -1,0 +1,12 @@
+extends _webDocument.pug
+block body
+    header
+        .container
+            a.site-logo(href="/") AntoXa PRO
+    main.content
+        .container
+            h1.title=pageTitle || 'Hello, World!'
+            block content
+    footer
+        .container
+            p &copy; 2017 AntoXa PRO | Создание сайтов.
