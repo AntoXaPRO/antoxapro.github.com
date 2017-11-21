@@ -1,0 +1,324 @@
+/*!     axp-front v0.0.1
+*       https://github.com/AntoXaPRO/axp-front
+*       info@antoxa.pro
+============================= */
+/* Основной шрифт */
+@font-face {
+  font-family: "SegoeUIRegular";
+  src: url(../fonts/SegoeUIRegular.eot);
+  src: url(../fonts/SegoeUIRegular.eot?#iefix) format("embedded-opentype"), url(../fonts/SegoeUIRegular.woff) format("woff"), url(../fonts/SegoeUIRegular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "SegoeUIBold";
+  src: url(../fonts/SegoeUIBold.eot);
+  src: url(../fonts/SegoeUIBold.eot?#iefix) format("embedded-opentype"), url(../fonts/SegoeUIBold.woff) format("woff"), url(../fonts/SegoeUIBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "SegoeUIItalic";
+  src: url(../fonts/SegoeUIItalic.eot);
+  src: url(../fonts/SegoeUIItalic.eot?#iefix) format("embedded-opentype"), url(../fonts/SegoeUIItalic.woff) format("woff"), url(../fonts/SegoeUIItalic.ttf) format("truetype");
+}
+@font-face {
+  font-family: "SegoeUILight";
+  src: url(../fonts/SegoeUILight.eot);
+  src: url(../fonts/SegoeUILight.eot?#iefix) format("embedded-opentype"), url(../fonts/SegoeUILight.woff) format("woff"), url(../fonts/SegoeUILight.ttf) format("truetype");
+}
+@font-face {
+  font-family: "SegoeUISemiBold";
+  src: url(../fonts/SegoeUISemiBold.eot);
+  src: url(../fonts/SegoeUISemiBold.eot?#iefix) format("embedded-opentype"), url(../fonts/SegoeUISemiBold.woff) format("woff"), url(../fonts/SegoeUISemiBold.ttf) format("truetype");
+}
+/* Типографика */
+body {
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: "SegoeUIRegular";
+  font-weight: normal;
+}
+@media screen and (max-width: 807px) {
+  body {
+    font-size: 16px;
+  }
+}
+.title {
+  padding: 0px;
+  margin: 0px;
+}
+h1 {
+  font-size: 30px;
+  font-family: "SegoeUIBold";
+  font-weight: normal;
+}
+h2 {
+  font-size: 26px;
+  font-family: "SegoeUIBold";
+  font-weight: normal;
+}
+h3 {
+  font-size: 22px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "SegoeUISemiBold";
+  font-weight: normal;
+}
+@media screen and (max-width: 807px) {
+  h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+h4 {
+  font-size: 20px;
+  font-family: "SegoeUISemiBold";
+  font-weight: normal;
+}
+h4 {
+  font-size: 18px;
+  font-family: "SegoeUISemiBold";
+  font-weight: normal;
+}
+h5 {
+  font-size: 16px;
+  font-family: "SegoeUISemiBold";
+  font-weight: normal;
+}
+p {
+  padding: 0px;
+  margin: 0px 0px 15px 0px;
+  line-height: 1.6;
+}
+b,
+strong {
+  font-family: "SegoeUIBold";
+  font-weight: normal;
+}
+label {
+  font-family: "SegoeUISemiBold";
+  font-weight: normal;
+}
+/* HTML */
+html {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+}
+/* BODY */
+body {
+  padding: 0px;
+  margin: 0px;
+  flex: auto;
+  flex-direction: column;
+}
+body * {
+  box-sizing: border-box;
+}
+body a {
+  text-decoration: none;
+  transition: 0.2s ease-out;
+  outline: 0;
+}
+body a:hover {
+  text-decoration: underline;
+}
+/* Контейнер. */
+.container {
+  display: block;
+  margin: 0px auto;
+  padding: 0px 15px;
+  max-width: 1200px;
+}
+@media screen and (max-width: 1217px) {
+  .container {
+    width: 1200px;
+  }
+}
+@media screen and (max-width: 1217px) {
+  .container {
+    width: 1000px;
+  }
+}
+@media screen and (max-width: 1017px) {
+  .container {
+    width: 790px;
+  }
+}
+@media screen and (max-width: 807px) {
+  .container {
+    width: 100%;
+  }
+}
+/* Навигация. */
+.nav {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+.nav > li {
+  display: block;
+}
+/* Хлебные крошки. */
+.breadcrumb {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+.breadcrumb > li {
+  display: block;
+}
+.breadcrumb > li {
+  display: flex;
+}
+.breadcrumb > li a {
+  display: inline-block;
+}
+.breadcrumb > li a .icon:before {
+  margin: 0px;
+}
+.breadcrumb > li:not(:last-child):after {
+  content: "/";
+  margin: 0px 7.5px;
+}
+/* Содержимое. */
+.content .title {
+  margin-bottom: 15px;
+}
+/* Списки. */
+ul,
+ol {
+  padding-left: 30px;
+}
+ul li,
+ol li {
+  padding: .3rem 0px;
+}
+/* Разбиение на страницы. */
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: 0.25rem;
+}
+.pagination > li {
+  display: block;
+  margin-left: 0px;
+  padding: .4rem;
+}
+/* Картинки */
+.image {
+  display: block;
+  width: 100%;
+}
+.multy-images {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.multy-images:hover img:last-child {
+  opacity: 1;
+  transform: scale(1.05);
+  filter: alpha(opacity=100);
+}
+.multy-images img:last-child {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+.multy-images img:first-child {
+  position: relative;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+/* Теги. */
+.tag {
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 3px;
+  font-size: .9rem;
+  line-height: 1;
+  padding: .3rem .4rem;
+}
+/* Сообщения. */
+.alert {
+  padding: 15px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.alert-info {
+  background-color: #d9edf7;
+  border-color: #bcdff1;
+  color: #31708f;
+}
+/* Вспомогательные. */
+.c-padding {
+  padding: 15px;
+}
+.c-margin {
+  margin: 15px;
+}
+.c-margin-v {
+  margin: 15px 0px;
+}
+.c-margin-h {
+  margin: 0px 15px;
+}
+/* Выравнивание текста. */
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+/* Разное. */
+.video-iframe {
+  display: block;
+  width: 100%;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  color: #333;
+  background-color: #f1f6f5;
+}
+header {
+  padding: 60px 0px;
+}
+header .site-logo a {
+  font-family: "SegoeUILight";
+  font-weight: normal;
+  display: inline-block;
+  font-size: 38px;
+  line-height: 1;
+  color: #333;
+}
+header .site-logo a:hover {
+  text-decoration: none;
+}
+footer {
+  padding: 15px 0px;
+}
+footer p {
+  margin-bottom: 5px;
+}
+footer .copyright {
+  font-size: 16px;
+}
+footer .contacts {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+footer .contacts > li {
+  display: inline-block;
+  padding: 0px;
+  margin-right: 15px;
+}
