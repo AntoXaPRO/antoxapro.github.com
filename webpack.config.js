@@ -1,5 +1,4 @@
 const path = require('path'),
-    HtmlWebpackPlugin = require('html-webpack-plugin'),
     ExtractTextWEbpackPlugin = require('extract-text-webpack-plugin'),
     PATHS = {
         dist: __dirname,
@@ -14,13 +13,6 @@ module.exports = {
     },
     module: {
         rules: [
-            {
-                test: /\.pug$/,
-                loader: 'pug-loader',
-                options: {
-                    pretty: true
-                }
-            },
             {
                 test: /\.less$/,
                 use: ExtractTextWEbpackPlugin.extract({
@@ -40,10 +32,6 @@ module.exports = {
         ]
     },
     plugins:[
-        new ExtractTextWEbpackPlugin('builds/styles.css'),
-        new HtmlWebpackPlugin({
-            template: PATHS.src + '/views/pug/pages/index.pug',
-            excludeChunks: ['styles']
-        })
+        new ExtractTextWEbpackPlugin('builds/styles.css')
     ]
 };
